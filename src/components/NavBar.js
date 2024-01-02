@@ -3,6 +3,7 @@ import { Navbar,Container, Nav} from "react-bootstrap";
 import cv from '../assets/images/cv.png';
 import linkedin from '../assets/images/linkedin.png';
 import git from'../assets/images/github.png';
+import resume from '../assets/pdf/Resume.pdf'
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
@@ -35,9 +36,9 @@ export const NavBar=() =>
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled": ""}>
         <Container>
-          {/* <Navbar.Toggle aria-controls="basic-navbar-nav" >
+          <Navbar.Toggle aria-controls="basic-navbar-nav" >
               <span className="navbar-toggler-icon"></span>
-          </Navbar.Toggle> */}
+          </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as = {HashLink} to="#home" smooth className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')} >Home</Nav.Link>
@@ -48,7 +49,9 @@ export const NavBar=() =>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                  <a href="#" target="_blank"><img src={cv} alt="resume"/></a>
+                  <a href={resume} download="Devansh_Jain_Resume.pdf">
+                    <img src={cv} alt="resume" />
+                  </a>
                   <a href="https://www.linkedin.com/in/devansh-jain-8019b4227/" target="_blank"><img src={linkedin} alt="linkedIn"/></a>
                   <a href="https://github.com/devansh19jain" target="_blank"><img src={git} alt="Icon" /></a>
               </div>

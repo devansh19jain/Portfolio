@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import bannerimg from "../assets/images/banner-img2.png";
+// import bannerimg from "../assets/images/banner-img2.png";
 
 export const Banner = () =>{
     const [loopNum, setLoopNum] = useState(0);
@@ -41,8 +41,8 @@ export const Banner = () =>{
     return (
         <section className="banner" id="home">
             <Container>
-                <Row className="align-item-center">
-                    <Col xs ={12} md={6} xl={7}>
+                {/* <Row className="align-item-center">
+                    <Col xs ={12} md={6} xl={7} className="txt"> */}
                         <span className="tagline">Welcome to my Portfolio!</span>
                         <h1>{`Hi! I'm Devansh`}
                         <br/>
@@ -50,11 +50,11 @@ export const Banner = () =>{
                         <p>My name is Devansh Jain. </p>
                         <p>With a robust Computer Science education, I adeptly apply theoretical knowledge to practical projects, fostering problem-solving skills. Quick to grasp new concepts, I stay updated on industry trends, showcasing responsibility, drive, and leadership prowess.</p>
                         
-                    </Col>
+                    {/* </Col>
                     <Col xs={12} md={6} xl={5}>
-                        {/* <img src= {bannerimg} alt="Header Img"/> */}
+                        <img src= {bannerimg} alt="Header Img"/>
                     </Col>
-                </Row>
+                </Row> */}
             </Container>
 
         </section>

@@ -27,10 +27,10 @@ export const Achievement = ()=>{
         }
       };
       const data = [
-        { image: leetcode, title: "Leetcode" ,description :"Achieved the Highest Rating of 1651"},
-        { image: coding, title: "Coding Platforms", description :"Solved 650+ question across various coding platforms"},
-        { image: jeemain, title: "Jee Mains" , description :"Obtained 97.4 percentile in JEE MAINS 2021"},
-        { image: jeeadv, title: "Jee Advanced", description :")btained 16819 rank in JEE Advanced 2021" },
+        { image: leetcode, title: "Leetcode" ,description :"Achieved the Highest Rating of 1620"},
+        { image: coding, title: "Coding Platforms", description :"Solved 400+ question across various coding platforms"},
+        { image: jeemain, title: "Jee Mains" , description :"Obtained 97.9 percentile in JEE MAINS 2021"},
+        // { image: jeeadv, title: "Jee Advanced", description :")btained 16819 rank in JEE Advanced 2021" },
         
       ];
     return (

@@ -30,12 +30,12 @@ export const Project = () => {
             title:"Student Academic Dropout and Sucess",
             description: "This data science project explores student academic outcomes through exploratory data analysis. We dived into a comprehensive dataset to uncover patterns, identify key factors influencing success and dropout, and develop insights to guide interventions and support student achievement.",
             imgUrl: ids
-        },
-        {
-            title:"Street Sign Recognition ",
-            description: "In this project we developed a deep learning model for recognizing street signs using the GTSRB dataset. We employed a Convolutional Neural Network (CNN) architecture to achieve high accuracy in classifying diverse traffic signs. The model achieved outstanding performance, reaching 99.69% accuracy on the validation set and 97.68% on the test set.",
-            imgUrl: dl
         }
+        // {
+        //     title:"Street Sign Recognition ",
+        //     description: "In this project we developed a deep learning model for recognizing street signs using the GTSRB dataset. We employed a Convolutional Neural Network (CNN) architecture to achieve high accuracy in classifying diverse traffic signs. The model achieved outstanding performance, reaching 99.69% accuracy on the validation set and 97.68% on the test set.",
+        //     imgUrl: dl
+        // }
     ];
     return (
         <section className="project" id="project">
@@ -48,13 +48,13 @@ export const Project = () => {
                     <Tab.Container id="projetcs-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Web Develpement</Nav.Link>
+                            <Nav.Link eventKey="first">Dev</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second">Other</Nav.Link>
+                            <Nav.Link eventKey="second">IoT</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="third">ML/DL</Nav.Link>
+                            <Nav.Link eventKey="third">ML</Nav.Link>
                         </Nav.Item>
                     </Nav>
                     <Tab.Content>

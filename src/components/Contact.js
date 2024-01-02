@@ -45,11 +45,11 @@ export const Contact = () => {
   return (
     <section className="contact" id="connect">
       <Container>
-        <Row className="align-items-center">
+        {/* <Row className="align-items-center">
           <Col size={12} md={6}>
-            {/* <img src={contactImg} alt="contact us"/> */}
+            <img src={contactImg} alt="contact us"/>
           </Col>
-          <Col size={12} md={6}>
+          <Col size={12} md={6}> */}
                 <h2>Get In Touch</h2>
                 <form onSubmit={handleSubmit} >
                   <Row>
@@ -77,8 +77,8 @@ export const Contact = () => {
                     }
                   </Row>
                 </form>
-          </Col>
-        </Row>
+          {/* </Col>
+        </Row> */}
       </Container>
     </section>
   )

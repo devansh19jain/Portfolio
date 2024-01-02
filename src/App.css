@@ -191,11 +191,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 180px 0 100px 0;
+  padding: 180px 200px 200px 200px;
   background-image: url('./assets/images/banner-bg2.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: center;
 }
 .banner .tagline {
   font-weight: 700;
@@ -222,6 +223,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
+}
+.banner Col{
+  text-align: center;
 }
 
 .banner img {
@@ -282,6 +286,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-top: 10px;
 
 }
+.skill-icon{
+  max-height: 50px;
+  min-width: 50px;
+}
+
 
 /************ Projects Css ************/
 .project {
@@ -539,7 +548,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Contact ************/
 .contact {
   background: linear-gradient( #aa36a6 , #633792);
-  padding: 60px 0 100px 0;
+  padding: 40px 300px 100px 300px;
+  text-align: center;
 }
 .contact img {
   width: 92%;
@@ -630,4 +640,91 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav.navbar {
+    padding: 12px 0;
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .banner {
+    padding: 120px 0 80px 0;
+  }
+
+  .banner h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .banner p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .skill{
+    display:flex;
+    flex-direction: column;
+
+  }
+
+  .skill h2 {
+    font-size: 35px;
+  }
+
+  .skill p {
+    font-size: 16px;
+    margin: 10px 0 40px 0;
+  }
+
+  .project h2 {
+    font-size: 35px;
+  }
+
+  .project p {
+    font-size: 16px;
+    margin: 10px auto 10px auto;
+    width: 90%;
+  }
+
+  .extra-list h2 {
+    font-size: 35px;
+  }
+
+  .extra-list p {
+    font-size: 16px;
+    margin: 10px 0 50px 0;
+  }
+  .contact{
+    padding: 0 0 0 0;
+  }
+  .contact h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    font-size: 16px;
+    padding: 14px 20px;
+  }
+
+  .contact form button {
+    font-size: 16px;
+    padding: 0 10px 0 10px;
+    margin-top: 20px;
+  }
+
+  .footer img {
+    width: 50%;
+  }
+
+  .footer p {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 }
