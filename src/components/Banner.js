@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import Particle from "./Particle";
 // import bannerimg from "../assets/images/banner-img2.png";
 
 export const Banner = () =>{

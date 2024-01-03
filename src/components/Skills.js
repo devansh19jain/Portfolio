@@ -30,15 +30,18 @@ export const Skills = () => {
   };
   const skillsData = [
     { image: cpp, title: "C++" },
+    { image: cpp, title: "DSA" },
+    { image: oops, title: "OOPs" },
+    { image: sql, title: "MySQL" },
+    { image: dbms, title: "MongoDB" },
+    { image: webdev, title: "Express.js" },
     { image: webdev, title: "ReactJS" },
+    { image: webdev, title: "Node.js" },
     { image: webdev, title: "JavaScript" },
     { image: webdev, title: "Bootstrap" },
     { image: dbms, title: "DBMS" },
-    { image: oops, title: "OOPs" },
     { image: os, title: "OS" },
     { image: cn, title: "CN" },
-    { image: sql, title: "MySQL" },
-    { image: dbms, title: "MongoDB" }
   ];
   return (
     <section className="skill" id="skill">

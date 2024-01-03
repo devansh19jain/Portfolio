@@ -49,9 +49,10 @@ export const NavBar=() =>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                  <a href={resume} download="Devansh_Jain_Resume.pdf">
+                  <a href={resume} download="Devansh_Jain_Resume.pdf" className="resume">
                     <img src={cv} alt="resume" />
                   </a>
+                  <div className="resume-tooltip">Resume</div>
                   <a href="https://www.linkedin.com/in/devansh-jain-8019b4227/" target="_blank"><img src={linkedin} alt="linkedIn"/></a>
                   <a href="https://github.com/devansh19jain" target="_blank"><img src={git} alt="Icon" /></a>
               </div>

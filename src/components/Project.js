@@ -10,19 +10,22 @@ export const Project = () => {
         {
             title:"Crazy Bus",
             description: "Crazy Bus is a full-stack project, redefines the LNMIIT travel experience. Tailored for students, it streamlines bus selection, seat reservation, and secure payments. It has user-centric design, emphasizing how Crazy Bus enhances convenience for LNMIIT students. From the intuitive interface to robust functionality, the project showcases a seamless and reliable bus booking platform, addressing the unique needs of the LNMIIT community.",
-            imgUrl: cb
+            imgUrl: cb,
+            link: "https://craziest-bus.netlify.app/"
         },
         {
-            title:"Algorithm Visualiser",
-            description: "The Algorithm Visualizer project is currently in progress, with the goal of providing an interactive visualization of common sorting algorithms. This tool will allow users to observe the step-by-step execution of sorting algorithms with adjustable input sizes and variable numbers. By enhancing understanding through visual representation, the project aims to make learning algorithms engaging and accessible, fostering a deeper comprehension of sorting processes.",
-            imgUrl: av
+            title:"PortFolio Website",
+            description: "Personal Website",
+            imgUrl: av,
+            link: "https://659566ab4a0bf7006ab98a8e--startling-marzipan-b7e9c1.netlify.app/"
         }
     ];
     const projects2 = [
         {
             title:"Vital-Track",
             description: "This project is a prototype for monitoring different body vital and environmental conditions. The system uses a variety of sensors, including a temperature sensor, an environmental sensor, and a network connection. The data collected from these sensors is then displayed on a web dashboard and uploaded to a cloud platform for further data analysis and real-time monitoring.",
-            imgUrl: vt
+            imgUrl: vt,
+            link: "https://github.com/devansh19jain/Vital-Track"
         }
     ];
     const projects3 = [
@@ -66,7 +69,7 @@ export const Project = () => {
                                         return (
                                             <ProjectCard
                                                 key={index}
-                                                {...project}/>   
+                                                {...project}/>       
                                         )
                                     }
                                 )}
