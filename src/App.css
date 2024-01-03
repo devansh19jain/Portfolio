@@ -13,7 +13,7 @@ body{
   font-weight: 100;
   position: relative;
   overflow-x: hidden;
-  background-color: #121212 !important;
+  /* background-color: #121212 !important; */
   color: white !important;
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
@@ -202,13 +202,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 96, 173, 0.5) -5.91%, rgba(89, 63, 116, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(255, 255, 255, 0.454) -5.91%, rgba(0, 0, 0, 0.504) 111.58%);
+  animation: gradient-animation 18s ease infinite;
   border: none; /*1px inset rgba(255, 255, 255, 0.5);*/
-  
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
 }
+/* background: linear-gradient(90.21deg, rgba(170, 96, 173, 0.5) -5.91%, rgba(89, 63, 116, 0.5) 111.58%); */
+
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
@@ -289,7 +291,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-icon{
   max-height: 50px;
   min-width: 50px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
+
+.skill-icon:hover {
+  transform: scale(1.5); /* Adjust the scale factor as needed for the size increase */
+  box-shadow: 0 0 10px 5px rgba(102, 28, 186, 0.7); /* Adjust the color and size as needed */
+}
+
+/* 
+.skill-icon:hover {
+  box-shadow: 0 0 10px 5px rgba(155, 43, 174, 0.7); /* Adjust the color and size as needed */
+ 
+
 
 
 /************ Projects Css ************/

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import Particle from "./Particle";
 // import bannerimg from "../assets/images/banner-img2.png";
 
 export const Banner = () =>{
@@ -40,7 +41,9 @@ export const Banner = () =>{
     }
     return (
         <section className="banner" id="home">
+        {/* <Particle/> */}
             <Container>
+
                 {/* <Row className="align-item-center">
                     <Col xs ={12} md={6} xl={7} className="txt"> */}
                         <span className="tagline">Welcome to my Portfolio!</span>

@@ -5,18 +5,20 @@ const nodemailer = require("nodemailer");
 
 // server used to send send emails
 const app = express();
+const port = 8080;
+
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(8080, () => console.log("Server Running"));
+app.listen(port, () => console.log(`Server is Running on port ${port}`));
 // console.log(process.env.EMAIL_USER);
 // console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "ghodasaradiya19@gmail.com",
-    pass: "kjad qosv emrx makg"
+    user: "devanshjain1910@gmail.com",
+    pass: "azir ipuz hfsq eqyg"
   },
 });
 
@@ -35,7 +37,7 @@ router.post("/contact", (req, res) => {
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "diyag2003@gmail.com",
+    to: "devanshjain1207@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
