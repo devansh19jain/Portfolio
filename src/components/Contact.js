@@ -25,7 +25,7 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("https://portfolio-fst2dlefz-devansh-jains-projects-609f8603.vercel.app/contact", {
+    let response = await fetch("https://portfolio-fst2dlefz-devansh-jains-projects-609f8603.vercel.app/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
