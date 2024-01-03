@@ -5,7 +5,7 @@ const nodemailer = require("nodemailer");
 
 // server used to send send emails
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
@@ -17,8 +17,8 @@ app.listen(port, () => console.log(`Server is Running on port ${port}`));
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "devanshjain1910@gmail.com",
-    pass: "azir ipuz hfsq eqyg"
+    user:  process.env.EMAIL_USER,
+    pass:  process.env.EMAIL_PASS
   },
 });
 
