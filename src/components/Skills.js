@@ -8,6 +8,12 @@ import cn from '../assets/images/cn.png';
 import oops from '../assets/images/oops.png';
 import sql from '../assets/images/sql.png';
 import webdev from '../assets/images/webdev.png';
+import mongo from '../assets/images/mongo.png';
+import dsa from '../assets/images/dsa.png';
+import express from '../assets/images/js.png'
+import react from '../assets/images/react.png'
+import node from '../assets/images/nodejs.png'
+import boot from '../assets/images/bootstrap.png'
 
 export const Skills = () => {
   const responsive = {
@@ -30,15 +36,15 @@ export const Skills = () => {
   };
   const skillsData = [
     { image: cpp, title: "C++" },
-    { image: cpp, title: "DSA" },
+    { image: dsa, title: "DSA" },
     { image: oops, title: "OOPs" },
     { image: sql, title: "MySQL" },
-    { image: dbms, title: "MongoDB" },
-    { image: webdev, title: "Express.js" },
-    { image: webdev, title: "ReactJS" },
-    { image: webdev, title: "Node.js" },
-    { image: webdev, title: "JavaScript" },
-    { image: webdev, title: "Bootstrap" },
+    { image: mongo, title: "MongoDB" },
+    { image: express, title: "Express.js" },
+    { image: react, title: "ReactJS" },
+    { image: node, title: "Node.js" },
+    // { image: webdev, title: "JavaScript" },
+    { image: boot, title: "Bootstrap" },
     { image: dbms, title: "DBMS" },
     { image: os, title: "OS" },
     { image: cn, title: "CN" },

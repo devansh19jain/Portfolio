@@ -5,6 +5,7 @@ import cb from "../assets/images/crazy_bus.png";
 import vt from "../assets/images/vital_track.png";
 import ids from "../assets/images/ids.png";
 import dl from "../assets/images/dl.png";
+import port from '../assets/images/portfolio.png'
 export const Project = () => {
     const projects1 = [
         {
@@ -16,7 +17,7 @@ export const Project = () => {
         {
             title:"PortFolio Website",
             description: "Personal Website",
-            imgUrl: av,
+            imgUrl: port,
             link: "https://659566ab4a0bf7006ab98a8e--startling-marzipan-b7e9c1.netlify.app/"
         }
     ];
@@ -26,6 +27,11 @@ export const Project = () => {
             description: "This project is a prototype for monitoring different body vital and environmental conditions. The system uses a variety of sensors, including a temperature sensor, an environmental sensor, and a network connection. The data collected from these sensors is then displayed on a web dashboard and uploaded to a cloud platform for further data analysis and real-time monitoring.",
             imgUrl: vt,
             link: "https://github.com/devansh19jain/Vital-Track"
+        },
+        {
+            title:"Student Academic Dropout and Sucess",
+            description: "This data science project explores student academic outcomes through exploratory data analysis. We dived into a comprehensive dataset to uncover patterns, identify key factors influencing success and dropout, and develop insights to guide interventions and support student achievement.",
+            imgUrl: ids
         }
     ];
     const projects3 = [
@@ -47,18 +53,18 @@ export const Project = () => {
                     <Col>
                     <h2>Projects</h2>
                     <p>"Explore my diverse portfolio of projects, each a testament to my passion for problem-solving and creativity. From web development to software engineering, discover the impact of my work."</p>
-                    <p className="link-dir">Github Link in Navbar and Footer</p>
+                    {/* <p className="link-dir">Github Link in Navbar and Footer</p> */}
                     <Tab.Container id="projetcs-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
                             <Nav.Link eventKey="first">Dev</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second">IoT</Nav.Link>
+                            <Nav.Link eventKey="second">ML / IoT</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
+                        {/* <Nav.Item>
                             <Nav.Link eventKey="third">ML</Nav.Link>
-                        </Nav.Item>
+                        </Nav.Item> */}
                     </Nav>
                     <Tab.Content>
                         <Tab.Pane eventKey="first">
@@ -90,7 +96,7 @@ export const Project = () => {
                                 )}
                             </Row>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="third">
+                        {/* <Tab.Pane eventKey="third">
                         <Row>
                                 {
                                 projects3.map(
@@ -104,7 +110,7 @@ export const Project = () => {
                                     }
                                 )}
                             </Row>
-                        </Tab.Pane>
+                        </Tab.Pane> */}
                     </Tab.Content>
                     </Tab.Container>
                     </Col>
