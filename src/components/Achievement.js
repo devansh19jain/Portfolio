@@ -4,7 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import leetcode from "../assets/images/leetcode.png";
 import coding from "../assets/images/coding.png";
 import jeemain from "../assets/images/jeemain.png";
-import jeeadv from "../assets/images/jeeadv.jpeg";
+// import jeeadv from "../assets/images/jeeadv.jpeg";
+import hacks from "../assets/images/hacks.png";
 
 export const Achievement = ()=>{
     const responsive = {
@@ -27,9 +28,10 @@ export const Achievement = ()=>{
         }
       };
       const data = [
-        { image: leetcode, title: "Leetcode" ,description :"Achieved the Highest Rating of 1620"},
+        { image: leetcode, title: "Leetcode" ,description :"Achieved the Highest Rating of 1699"},
+        { image: hacks, title: "RP Hacks Finalist" , description :"Led team to finals among 300 teams, 1200+ participants. Innovated cyber solutions: Chrome extension for ML phishing detection, web tool to verify URLs and detect spam."},
         { image: coding, title: "Coding Platforms", description :"Solved 400+ question across various coding platforms"},
-        { image: jeemain, title: "Jee Mains" , description :"Obtained 97.9 percentile in JEE MAINS 2021"},
+        { image: jeemain, title: "Jee Mains" , description :"Obtained 97.9 percentile in JEE MAINS 2021"}
         // { image: jeeadv, title: "Jee Advanced", description :")btained 16819 rank in JEE Advanced 2021" },
         
       ];
